@@ -11,7 +11,6 @@ cp *.elf CD_root/isolinux/
 cp *.jpg CD_root/isolinux/
 cp *.menu CD_root/isolinux/
 cp *.txt CD_root/isolinux/
-nasm -felf32 -o boot.o boot.S
 bcc -c -Md libdos.c -o libdos.a
 bcc -x -i -L -Md hello.c -o hello.com
 cp *.c32 CD_root/isolinux/
